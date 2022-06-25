@@ -38,7 +38,7 @@ def upload():
       f.save(file_path)
       #Call prediction to predict the output
       result=prediction(file_path)
-      return result
+      return render_template('segment.html', prediction_text="It's a {}".format(result))
 
 
 

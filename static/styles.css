@@ -121,3 +121,14 @@
     font-size: 17px;
     font-family: system-ui
 }
+
+#prediction-text{
+    position:absolute;
+    top: 480px;
+    left: 730px;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 25px;
+
+
+}

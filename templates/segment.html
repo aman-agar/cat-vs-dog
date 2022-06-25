@@ -8,15 +8,13 @@
     <title>Cardiac Image Segmentation Tool</title>
 </head>
 <body>
-    <p id="heading">You choose the perfect place to Auto-Segment your Cardiac MRI Images </p>
+    <p id="heading">You have choosen the perfect place to Auto-Segment your Cardiac MRI Images </p>
     <br>
     <div>
-    <!-- <input class="input" type="file" value="Choose Image"> -->
     <form action="http://localhost:5000/upload" enctype="multipart/form-data" method="POST">
         <input class="input" type="file" value="Choose Image" name="file">
-        <input class="boxsub" type="submit" onclick="upload()" enctype="multipart/form-data" method="POST">
+        <input class="boxsub" type="submit" onclick="prediction()" enctype="multipart/form-data" method="POST">
     </form>
-    <!-- <iframe src="http://localhost:5000/upload" title="Result"> -->
     </div>
     <center><div class="box">
 

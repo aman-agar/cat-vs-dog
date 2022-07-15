@@ -5,7 +5,7 @@ from keras.models import load_model
 import numpy as np
 
 file_path = ''
-model=load_model('D:\Python Programming\Flask\static\cat_vs_dog.h5')
+model=load_model(r'static/cat_vs_dog.h5')
 
 def prediction(file_path):
     results=['CAT','DOG']
@@ -34,7 +34,7 @@ def Segmentor():
 def upload():
     if request.method == 'POST':
       f = request.files['file']
-      file_path=os.path.join(r'D:\Python Programming\Flask\static',secure_filename(f.filename))
+      file_path=os.path.join(r'static/',secure_filename(f.filename))
       f.save(file_path)
       #Call prediction to predict the output
       result=prediction(file_path)
